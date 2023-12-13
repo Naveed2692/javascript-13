@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-13</title>
+</head>
+<body>
+    
+
+
+<script>
+var now = new Date ();
+document.write(now);
+document.write("<h3>Question No 2</h3>"+ "<br>")
+// Month with method
+var mnth = now.toLocaleString("en-US",{month:"long"})
+document.write(mnth);
+// current month without method
+var montharr = ["January","February","March","April","May","June","July","August","September","October","November","December",];
+var month = now.getMonth();
+document.write(montharr[month])
+document.write("<h3>Question No 3</h3>"+ "<br>")
+// Without method
+var date = new Date()
+var day = date.getDay();
+// var dayarr = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat",]
+document.write("<h3>Question No 4</h3>"+ "<br>")
+// document.write(dayarr[nowDay]);
+if (day===0 || day===6){
+    document.write("It's Fun Day")
+}else{
+    document.write("It's not Fun day today is working day")
+}
+document.write("<h3>Question No 5</h3>"+ "<br>")
+var cruntDay = new Date();
+var datePic = cruntDay.getDate();
+if (datePic<=15){
+    document.write("First fifteen days of the month");
+}else{
+
+    document.write("Last days of the month")
+}
+document.write("<h3>Question No 6</h3>"+ "<br>")
+ var dateCrunt = new Date()
+ var prev= new Date("Jan 1 1970")
+ var def = dateCrunt-prev;
+ document.write("Current Date: "+ dateCrunt+"<br>");
+ var prev= new Date("Jan 1 1970")
+ var def = dateCrunt-prev;
+ document.write(def);
+</script>
+ 
+</body>
+</html>
